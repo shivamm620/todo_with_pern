@@ -52,6 +52,7 @@ app.put("/todo/:id", async (req, res) => {
       console.error(err.message);
     }
   });
+  // delete todo;
   app.delete("/todo/:id", async (req, res) => {
     try {
       const { id } = req.params;
@@ -63,6 +64,6 @@ app.put("/todo/:id", async (req, res) => {
       console.log(err.message);
     }
   });
-app.listen(3000,()=>{
-    console.log('sever started on port 3000');
+app.listen(5000,()=>{
+    console.log('sever started on port 5000');
 })
